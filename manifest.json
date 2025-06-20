@@ -1,0 +1,38 @@
+{
+  "visualization": {
+    "id": "imageSwitcher",
+    "label": "Image by Filter",
+    "type": "COMMUNITY",
+    "components": ["render"]
+  },
+  "data": {
+    "records": true,
+    "dimensions": ["category"],
+    "metrics": [],
+    "requiredFields": [
+      {
+        "id": "image_url",
+        "type": "TEXT"
+      },
+      {
+        "id": "category",
+        "type": "TEXT"
+      }
+    ]
+  },
+  "template": {
+    "data": {
+      "records": [
+        {
+          "category": "Sample",
+          "image_url": "https://via.placeholder.com/300x200"
+        }
+      ]
+    }
+  },
+  "style": {},
+  "scripts": {
+    "render": "https://singhtanya6363.github.io/looker-image-viz/imageSwitcher.js"
+  }
+}
+
